@@ -45,7 +45,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh
 
 ### Certbot
 ```
-apt-get install certbot -y```
+apt-get install certbot -y
 ```
 ```
 certbot certonly --standalone --agree-tos --register-unsafely-without-email -d (добовляем свой домен)
