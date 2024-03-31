@@ -224,6 +224,8 @@ systemctl restart x-ui
 - AlmaLinux 9+
 - Rockylinux 9+
 
+  </details>
+
 ## Поддерживаемые архитектуры и устройства
 
 <details>
@@ -258,6 +260,9 @@ systemctl restart x-ui
 
 ## ХАРАКТЕРИСТИКИ
 
+<details>
+  <summary>Нажмите для получения подробной информации</summary>
+
 - Мониторинг Состояния Системы
 - Поиск по всем входящим и клиентам
 - Темная/светлая тема
@@ -273,6 +278,7 @@ systemctl restart x-ui
 - Поддерживает изменение конфигураций различными элементами, представленными на панели.
 - Поддерживает базу данных экспорта/импорта из панели
 
+</details>
 
 ## Настройки По Умолчанию
 
@@ -458,7 +464,8 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 </details>
 
 ## Предварительный просмотр
-
+<details>
+  <summary>Нажмите для просмотра</summary>
 ![1](./media/1.png)
 ![2](./media/2.png)
 ![3](./media/3.png)
@@ -467,3 +474,4 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 ![6](./media/6.png)
 ![7](./media/7.png)
 
+</details>
