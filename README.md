@@ -64,7 +64,7 @@ certbot renew --dry-run
 
 </details>
 
-## 3.[Конфигурация WARP](https://gitlab.com/fscarmen/warp)
+## 3. [Конфигурация WARP](https://gitlab.com/fscarmen/warp)
 
 <details>
   <summary>Нажмите для получения подробной информации о конфигурации WARP</summary>
