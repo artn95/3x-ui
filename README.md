@@ -255,54 +255,54 @@ systemctl restart x-ui
 <details>
   <summary>Нажмите для получения подробной информации о конфигурации WARP</summary>
 
-#### Usage
+#### Использование
 
-If you want to use routing to WARP before v2.1.0 follow steps as below:
+Если вы хотите использовать маршрутизацию в WARP до версии 2.1.0, выполните следующие действия:
 
-**1.** Install WARP on **SOCKS Proxy Mode**:
+**1.** Установите WARP в **режиме прокси-сокци SOCKS**:
 
    ```sh
    bash <(curl -sSL https://raw.githubusercontent.com/hamid-gh98/x-ui-scripts/main/install_warp_proxy.sh)
    ```
 
-**2.** If you already installed warp, you can uninstall using below command:
+**2.** Если вы уже установили warp, вы можете удалить его с помощью команды ниже:
 
    ```sh
    warp u
    ```
 
-**3.** Turn on the config you need in panel
+**3.** Включите необходимую конфигурацию на панели
 
-   Config Features:
+   Функции конфиг.:
 
-   - Block Ads
-   - Route Google + Netflix + Spotify + OpenAI (ChatGPT) to WARP
-   - Fix Google 403 error
+   - Блокировать рекламу
+   - Направьте Google + Netflix + Spotify + OpenAI (ChatGPT) в WARP
+   - Исправить ошибку Google 403
 
 </details>
 
-## IP Limit
+## Ограничение IP
 
 <details>
-  <summary>Click for IP limit details</summary>
+  <summary>Нажмите для получения подробной информации об IP-ограниче</summary>
 
-#### Usage
+#### Использование
 
-**Note:** IP Limit won't work correctly when using IP Tunnel
+**Примечание:** IP Limit не будет работать правильно при использовании IP-туннеля
 
-- For versions up to `v1.6.1`:
+- Для версий до  `v1.6.1`:
 
-  - IP limit is built-in into the panel.
+  - Ограничение IP-адреса встроено в панель.
 
-- For versions `v1.7.0` and newer:
+- Для версий `v1.7.0` и более поздних версий:
 
-  - To make IP Limit work properly, you need to install fail2ban and its required files by following these steps:
+  - Чтобы IP Limit работал должным образом, вам необходимо установить fail2ban и необходимые файлы, выполнив следующие действия:
 
-    1. Use the `x-ui` command inside the shell.
-    2. Select `IP Limit Management`.
-    3. Choose the appropriate options based on your needs.
+    1. Используйте команду `x-ui` в терминале.
+    2. Выберите `IP Limit Management`.
+    3. Выберите подходящие варианты в зависимости от ваших потребностей.
    
-  - make sure you have ./access.log on your Xray Configuration after v2.1.3 we have an option for it
+  - убедитесь, что у вас есть ./access.log в вашей конфигурации Xray после версии 2.1.3, у нас есть опция для этого
   
   ```sh
     "log": {
@@ -314,80 +314,79 @@ If you want to use routing to WARP before v2.1.0 follow steps as below:
 
 </details>
 
-## Telegram Bot
+## Телеграм-бот
 
 <details>
-  <summary>Click for Telegram bot details</summary>
+  <summary>Нажмите для получения подробной информации о боте Telegram</summary>
 
-#### Usage
+#### Использование
 
-The web panel supports daily traffic, panel login, database backup, system status, client info, and other notification and functions through the Telegram Bot. To use the bot, you need to set the bot-related parameters in the panel, including:
+Веб-панель поддерживает ежедневный трафик, вход в панель, резервное копирование базы данных, состояние системы, информацию о клиенте и другие уведомления и функции через Telegram Bot. Чтобы использовать бота, вам необходимо установить параметры, связанные с ботом, на панели, в том числе:
 
-- Telegram Token
-- Admin Chat ID(s)
-- Notification Time (in cron syntax)
-- Expiration Date Notification
-- Traffic Cap Notification
-- Database Backup
-- CPU Load Notification
+- Токен Telegram
+- Идентификатор(ы) чата администратора
+- Время уведомления (в синтаксисе cron)
+- Уведомление о дате истечения срока действия
+- Уведомление О Ограничении Трафика
+- Резервное копирование базы данных
+- Уведомление о загрузке процессора
 
 
-**Reference syntax:**
+**Справочный синтаксис:**
 
-- `30 \* \* \* \* \*` - Notify at the 30s of each point
-- `0 \*/10 \* \* \* \*` - Notify at the first second of each 10 minutes
-- `@hourly` - Hourly notification
-- `@daily` - Daily notification (00:00 in the morning)
-- `@weekly` - weekly notification
-- `@every 8h` - Notify every 8 hours
+- `30 \* \* \* \* \*` - Уведомить в 30-х точках каждой точки
+- `0 \*/10 \* \* \* \*` - Уведомлять в первую секунду каждые 10 минут
+- `@hourly` - Почасовое уведомление
+- `@daily` - Ежедневное уведомление (00:00 утра)
+- `@weekly` - еженедельное уведомление
+- `@every 8h` - Уведомлять каждые 8 часов
 
-### Telegram Bot Features
+### Функции Telegram-бота
 
-- Report periodic
-- Login notification
-- CPU threshold notification
-- Threshold for Expiration time and Traffic to report in advance
-- Support client report menu if client's telegram username added to the user's configurations
-- Support telegram traffic report searched with UUID (VMESS/VLESS) or Password (TROJAN) - anonymously
-- Menu based bot
-- Search client by email ( only admin )
-- Check all inbounds
-- Check server status
-- Check depleted users
-- Receive backup by request and in periodic reports
-- Multi language bot
+- Периодический отчет
+- Уведомление о входе в систему
+- Уведомление о пороге ЦП
+- Порог для истечения срока действия и трафика для предварительной отчетности
+- Меню отчета поддержки клиента, если имя пользователя телеграммы клиента добавлено в конфигурации пользователя
+- Поддержка отчета о трафике телеграмм, поиск с помощью UUID (VMESS/VLESS) или пароля (TROJAN) - анонимно
+- Бот на основе меню
+- Поиск клиента по электронной почте (только для администратора)
+- Проверьте все входящие
+- Проверить статус сервера
+- Проверьте истощенных пользователей
+- Получить резервную копию по запросу и в периодических отчетах
+- Многоязычный бот
 
-### Setting up Telegram bot
+### Настройка Telegram-бота
 
-- Start [Botfather](https://t.me/BotFather) in your Telegram account:
+- Запустите [Botfather](https://t.me/BotFather) в своей учетной записи Telegram:
     ![Botfather](./media/botfather.png)
   
-- Create a new Bot using /newbot command: It will ask you 2 questions, A name and a username for your bot. Note that the username has to end with the word "bot".
+- Создайте нового бота с помощью команды /newbot: он задаст вам 2 вопроса, имя и имя пользователя для вашего бота. Обратите внимание, что имя пользователя должно заканчиваться словом "бот".
     ![Create new bot](./media/newbot.png)
 
-- Start the bot you've just created. You can find the link to your bot here.
+- Запустите бота, который вы только что создали. Вы можете найти ссылку на своего бота здесь.
     ![token](./media/token.png)
 
-- Enter your panel and config Telegram bot settings like below:
+- Введите свою панель и настройте настройки бота Telegram, как показано ниже:
 ![Panel Config](./media/panel-bot-config.png)
 
-Enter your bot token in input field number 3.
-Enter the user ID in input field number 4. The Telegram accounts with this id will be the bot admin. (You can enter more than one, Just separate them with ,)
+Введите свой токен бота в поле ввода номер 3. Введите идентификатор пользователя в поле ввода номер 4. Учетные записи Telegram с этим идентификатором будут администратором бота. (Вы можете ввести более одного, просто разделите их с помощью ,)
 
-- How to get Telegram user ID? Use this [bot](https://t.me/useridinfobot), Start the bot and it will give you the Telegram user ID.
+- Как получить идентификатор пользователя Telegram? Используйте этого [бота](https://t.me/useridinfobot), запустите бота, и он даст вам идентификатор пользователя Telegram.
 ![User ID](./media/user-id.png)
 
 </details>
 
-## API Routes
+## Маршруты API
 
 <details>
-  <summary>Click for API routes details</summary>
+  <summary>Нажмите для получения подробной информации о маршрутах API</summary>
 
-#### Usage
+#### Использование
 
-- `/login` with `POST` user data: `{username: '', password: ''}` for login
-- `/panel/api/inbounds` base for following actions:
+- `/login` с `POST` Пользовательские данные: `{username: '', password: ''}` Для входа в систему
+- `/panel/api/inbounds` база для следующих действий:
 
 | Method | Path                               | Action                                      |
 | :----: | ---------------------------------- | ------------------------------------------- |
@@ -409,21 +408,21 @@ Enter the user ID in input field number 4. The Telegram accounts with this id wi
 | `POST` | `"/delDepletedClients/:id"`        | Delete inbound depleted clients (-1: all)   |
 | `POST` | `"/onlines"`                       | Get Online users ( list of emails )       |
 
-\*- The field `clientId` should be filled by:
+\*- Поле `clientId` Должен быть заполнен:
 
-- `client.id` for VMESS and VLESS
-- `client.password` for TROJAN
-- `client.email` for Shadowsocks
+- `client.id` для VMESS и VLESS
+- `client.password` для TROJAN
+- `client.email` для Shadowsocks
 
 
-- [API Documentation](https://documenter.getpostman.com/view/16802678/2s9YkgD5jm)
+- [Документация по API](https://documenter.getpostman.com/view/16802678/2s9YkgD5jm)
 - [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/16802678-1a4c9270-ac77-40ed-959a-7aa56dc4a415?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D16802678-1a4c9270-ac77-40ed-959a-7aa56dc4a415%26entityType%3Dcollection%26workspaceId%3D2cd38c01-c851-4a15-a972-f181c23359d9)
 </details>
 
-## Environment Variables
+## Переменные Среды
 
 <details>
-  <summary>Click for environment variables details</summary>
+  <summary>Нажмите для получения подробной информации о переменных среды</summary>
 
 #### Usage
 
@@ -435,7 +434,7 @@ Enter the user ID in input field number 4. The Telegram accounts with this id wi
 | XUI_DB_FOLDER  |                    `string`                    | `"/etc/x-ui"` |
 | XUI_LOG_FOLDER |                    `string`                    | `"/var/log"`  |
 
-Example:
+Пример:
 
 ```sh
 XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
@@ -443,7 +442,7 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 
 </details>
 
-## Preview
+## Предварительный просмотр
 
 ![1](./media/1.png)
 ![2](./media/2.png)
@@ -452,9 +451,4 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 ![5](./media/5.png)
 ![6](./media/6.png)
 ![7](./media/7.png)
-
-## Acknowledgment
-
-- [Iran v2ray rules](https://github.com/chocolate4u/Iran-v2ray-rules) (License: **GPL-3.0**): _Enhanced v2ray/xray and v2ray/xray-clients routing rules with built-in Iranian domains and a focus on security and adblocking._
-- [Vietnam Adblock rules](https://github.com/vuong2023/vn-v2ray-rules) (License: **GPL-3.0**): _A hosted domain hosted in Vietnam and blocklist with the most efficiency for Vietnamese._
 
