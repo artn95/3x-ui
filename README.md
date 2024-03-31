@@ -1,10 +1,10 @@
 # 3X-UI
 
-[English](/README.md) | [Chinese](/README.zh.md)
+[Английский](/README.md) 
 
 <p align="center"><a href="#"><img src="./media/3X-UI.png" alt="Image"></a></p>
 
-**An Advanced Web Panel • Built on Xray Core**
+**Расширенная веб-панель • Построена на Xray Core**
 
 [![](https://img.shields.io/github/v/release/artn95/3x-ui.svg)](https://github.com/artn95/3x-ui/releases)
 [![](https://img.shields.io/github/actions/workflow/status/artn95/3x-ui/release.yml.svg)](#)
@@ -13,34 +13,34 @@
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 
-## Install & Upgrade
+## Установить и обновить
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh) 
 ```
 
-## Install Custom Version
+## Установить Пользовательскую Версию
 
-To install your desired version, add the version to the end of the installation command. e.g., ver `v2.2.6`:
+Чтобы установить нужную версию, добавьте версию в конец команды установки. например, версия `v2.2.6`:
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh) v2.2.6
 ```
 
-## SSL Certificate
+## SSL сертификат
 
 <details>
-  <summary>Click for SSL Certificate</summary>
+  <summary>Нажмите для получения SSL-сертификата</summary>
 
-### Cloudflare
+### Облачная вспышка
 
-The Management script has a built-in SSL certificate application for Cloudflare. To use this script to apply for a certificate, you need the following:
+Скрипт управления имеет встроенное приложение SSL-сертификата для Cloudflare. Чтобы использовать этот скрипт для подачи заявки на сертификат, вам нужно следующее:
 
-- Cloudflare registered email
-- Cloudflare Global API Key
-- The domain name has been resolved to the current server through cloudflare
+- Электронная почта, зарегистрированная Cloudflare
+- Глобальный ключ API Cloudflare
+- Доменное имя было разрешено текущему серверу через cloudflare
 
-**1:** Run the`x-ui`command on the terminal, then choose `Cloudflare SSL Certificate`.
+**1:** Запустите `x-ui`на терминале, затем выберите `Cloudflare SSL Certificate`.
 
 
 ### Certbot
@@ -50,7 +50,7 @@ certbot certonly --standalone --agree-tos --register-unsafely-without-email -d y
 certbot renew --dry-run
 ```
 
-***Tip:*** *Certbot is also built into the Management script. You can run the `x-ui` command, then choose `SSL Certificate Management`.*
+***Tip:*** *Certbot также встроен в скрипт управления. Вы можете запустить команду `x-ui` а затем выбрать `SSL Certificate Management`.*
 
 </details>
 
