@@ -48,8 +48,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh
 apt-get install certbot -y
 ```
 ```
-certbot certonly --standalone --agree-tos --register-unsafely-without-email -d (добовляем свой домен)
+certbot certonly --standalone --agree-tos --register-unsafely-without-email -d vpn-x3-s1.ru
 ```
+(добовляем свой домен)
+
 ```
 certbot renew --dry-run
 ```
