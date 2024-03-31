@@ -13,13 +13,13 @@
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 
-## Установить и обновить
+## 1. Установить и обновить
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh) 
 ```
 
-## Установить Пользовательскую Версию
+## 1. Установить Пользовательскую Версию
 
 Чтобы установить нужную версию, добавьте версию в конец команды установки. например, версия `v2.2.6`:
 
@@ -27,7 +27,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh
 bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh) v2.2.6
 ```
 
-## SSL сертификат
+## 2. SSL сертификат
 
 <details>
   <summary>Нажмите для получения SSL-сертификата</summary>
@@ -40,13 +40,17 @@ bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh
 - Глобальный ключ API Cloudflare
 - Доменное имя было разрешено текущему серверу через cloudflare
 
-**1:** Запустите `x-ui`на терминале, затем выберите `Cloudflare SSL Certificate`.
+**2.1:** Запустите `x-ui`на терминале, затем выберите `Cloudflare SSL Certificate`.
 
 
 ### Certbot
 ```
-apt-get install certbot -y
+apt-get install certbot -y```
+```
+```
 certbot certonly --standalone --agree-tos --register-unsafely-without-email -d (добовляем свой домен)
+```
+```
 certbot renew --dry-run
 ```
 
