@@ -1,6 +1,6 @@
 # 3X-UI
 
-[Английский](/README.md) 
+
 
 <p align="center"><a href="#"><img src="./media/3X-UI.png" alt="Image"></a></p>
 
