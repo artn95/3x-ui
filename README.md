@@ -58,6 +58,10 @@ certbot renew --dry-run
 
 **2.2:** Заходите в панель управления http://`домен`:2053/panel/settings, после копируем пути сертификатов в панел управления из терминала 
 
+![SSL1](./media/SSL1.png)
+![SSL2](./media/SSL2.png)
+![SSL3](./media/SSL3.png)
+
 </details>
 
 ## Ручная установка и обновление
