@@ -211,6 +211,9 @@ systemctl restart x-ui
 
 ## Рекомендуемая ОС
 
+<details>
+  <summary>Нажмите для получения подробной информации</summary>
+  
 - Ubuntu 20.04+
 - Debian 11+
 - CentOS 8+
