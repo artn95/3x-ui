@@ -54,7 +54,9 @@ certbot certonly --standalone --agree-tos --register-unsafely-without-email -d (
 certbot renew --dry-run
 ```
 
-***Tip:*** *Certbot также встроен в скрипт управления. Вы можете запустить команду `x-ui` а затем выбрать `SSL Certificate Management`.*
+***Совет:*** *Certbot также встроен в скрипт управления. Вы можете запустить команду `x-ui` а затем выбрать `SSL Certificate Management`.*
+
+**2.2:** Заходите в панель управления http://`домен`:2053/panel/settings, после копируем пути сертификатов в панел управления из терминала 
 
 </details>
 
