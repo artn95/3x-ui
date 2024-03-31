@@ -292,36 +292,6 @@ systemctl restart x-ui
  
 </details>
 
-## [Конфигурация WARP](https://gitlab.com/fscarmen/warp)
-
-<details>
-  <summary>Нажмите для получения подробной информации о конфигурации WARP</summary>
-
-#### Использование
-
-Если вы хотите использовать маршрутизацию в WARP до версии 2.1.0, выполните следующие действия:
-
-**1.** Установите WARP в **режиме прокси-сокци SOCKS**:
-
-   ```sh
-   bash <(curl -sSL https://raw.githubusercontent.com/hamid-gh98/x-ui-scripts/main/install_warp_proxy.sh)
-   ```
-
-**2.** Если вы уже установили warp, вы можете удалить его с помощью команды ниже:
-
-   ```sh
-   warp u
-   ```
-
-**3.** Включите необходимую конфигурацию на панели
-
-   Функции конфиг.:
-
-   - Блокировать рекламу
-   - Направьте Google + Netflix + Spotify + OpenAI (ChatGPT) в WARP
-   - Исправить ошибку Google 403
-
-</details>
 
 ## Ограничение IP
 
