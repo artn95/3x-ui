@@ -12,18 +12,11 @@
 [![Downloads](https://img.shields.io/github/downloads/artn95/3x-ui/total.svg)](#)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-> **Disclaimer:** This project is only for personal learning and communication, please do not use it for illegal purposes, please do not use it in a production environment
-
-**If this project is helpful to you, you may wish to give it a**:star2:
-
-<p align="left"><a href="#"><img width="125" src="https://github.com/artn95/3x-ui/assets/115543613/7aa895dd-048a-42e7-989b-afd41a74e2e1" alt="Image"></a></p>
-
-- USDT (TRC20): `TXncxkvhkDWGts487Pjqq1qT9JmwRUz8CC`
 
 ## Install & Upgrade
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh) 
 ```
 
 ## Install Custom Version
@@ -460,15 +453,8 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 ![6](./media/6.png)
 ![7](./media/7.png)
 
-## A Special Thanks to
-
-- [alireza0](https://github.com/alireza0/)
-
 ## Acknowledgment
 
 - [Iran v2ray rules](https://github.com/chocolate4u/Iran-v2ray-rules) (License: **GPL-3.0**): _Enhanced v2ray/xray and v2ray/xray-clients routing rules with built-in Iranian domains and a focus on security and adblocking._
 - [Vietnam Adblock rules](https://github.com/vuong2023/vn-v2ray-rules) (License: **GPL-3.0**): _A hosted domain hosted in Vietnam and blocklist with the most efficiency for Vietnamese._
 
-## Stargazers over Time
-
-[![Stargazers over time](https://starchart.cc/MHSanaei/3x-ui.svg)](https://starchart.cc/MHSanaei/3x-ui)
