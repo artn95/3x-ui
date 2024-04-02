@@ -470,7 +470,9 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 
 ## Предварительный просмотр
 <details>
+  
   <summary>Нажмите для просмотра</summary>
+  
 ![1](./media/1.png)
 ![2](./media/2.png)
 ![3](./media/3.png)
