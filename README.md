@@ -21,10 +21,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh
 
 ## 1. Установить Пользовательскую Версию
 
-Чтобы установить нужную версию, добавьте версию в конец команды установки. например, версия `v2.2.6`:
+Чтобы установить нужную версию, добавьте версию в конец команды установки. например, версия `v2.2.7`:
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh) v2.2.6
+bash <(curl -Ls https://raw.githubusercontent.com/artn95/3x-ui/master/install.sh) v2.2.7
 ```
 
 ## 2. SSL сертификат
